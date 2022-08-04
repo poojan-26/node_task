@@ -1,0 +1,380 @@
+{
+	"info": {
+		"_postman_id": "a08173ef-6092-41cb-9b09-b9f3f0ec56a5",
+		"name": "node_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all user get api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/task/v1/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"firstName\": \"kaju\",\r\n    \"lastName\": \"Bhoi\",\r\n    \"email\": \"kaju@gmail.com\",\r\n    \"username\": \"KBhai\",\r\n    \"password\": \"Abcd@123\",\r\n    \"address\": {\r\n        \"street\": \"ahivranjani-7\",\r\n        \"city\": \"Ahmedabad\",\r\n        \"state\": \"Gujarat\",\r\n        \"zipcode\":\" 364009\"\r\n      }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/task/v1/createuser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"createuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/task/v1/user/62e644ff5b901c6a379d278e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"user",
+						"62e644ff5b901c6a379d278e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user by id api",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"firstName\": \"jadu1111\",\r\n    \"lastName\": \"ghar\",\r\n    \"email\": \"jadu@gmail.com\",\r\n    \"username\": \"jGhar\",\r\n    \"password\": \"Abcd@12345\",\r\n    \"address\": {\r\n        \"street\": \"shivnagar\",\r\n        \"city\": \"Ahmedabad\",\r\n        \"state\": \"Gujarat\",\r\n        \"zipcode\":\" 364002\"\r\n      }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/task/v1/updateuser/62e654185737db09c18a870d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"updateuser",
+						"62e654185737db09c18a870d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user by id api",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/task/v1/deleteuser/62e656d713f03d61d739cd26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"deleteuser",
+						"62e656d713f03d61d739cd26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all role get api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/task/v1/role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create role api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"roleName\": \"admin\",\r\n \"accessModual\":[\"profile\", \"user\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/task/v1/createRole",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"createRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get roleby id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/task/v1/role/62e6bdd68c11ca2a26d05c26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"role",
+						"62e6bdd68c11ca2a26d05c26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update role by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"roleName\": \"normal user1234\",\r\n \"accessModual\":\"don'tknow\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/task/v1/updaterole/62e6bdd68c11ca2a26d05c26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"updaterole",
+						"62e6bdd68c11ca2a26d05c26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete role by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/task/v1/deleterole/62e6ddf437ce57c1bf363226",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"deleterole",
+						"62e6ddf437ce57c1bf363226"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign up APi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"firstName\": \"Kamelesh333\",\r\n    \"lastName\": \"Bhoi\",\r\n    \"email\": \"kamelesh66634@gmail.com\",\r\n    \"username\": \"KBhai\",\r\n    \"password\": \"Abcd@123\",\r\n    \"address\": {\r\n        \"street\": \"ahivranjani-3\",\r\n        \"city\": \"Ahmedabad\",\r\n        \"state\": \"Gujarat\",\r\n        \"zipcode\":\" 364002\"\r\n      },\r\n      \"roleId\":\"62e6bba78c11ca2a26d05c24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/task/v1/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin api ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"kamelesh@gmail.com\",\r\n    \"password\": \"Abcd@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/task/v1/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userList api ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/task/v1/userlist/?roleName=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"userlist",
+						""
+					],
+					"query": [
+						{
+							"key": "roleName",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatemany api for user lastname",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lastName\": \"Bhai\"  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/task/v1/updateMany/Bhoi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"task",
+						"v1",
+						"updateMany",
+						"Bhoi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
